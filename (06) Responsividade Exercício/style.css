@@ -80,6 +80,7 @@ header {
 
   background-color: #F7F7F7;
 }
+
 /* First element */
 .text{
   background-color: #fff;
@@ -178,4 +179,48 @@ header {
   justify-self: start;
   text-align: center;
   box-sizing: border-box;
+}
+
+@media (max-width:1000px) {
+  .grid-break1 {
+    grid-template-columns: 1fr;
+
+  }
+  .vantagem {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  body{
+    gap: 30rem;
+    margin-top: 20rem;
+  }
+  header {
+    gap: 30rem;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    
+  }
+  .text {
+    text-align: left;
+    justify-items: left;
+  }
+  
+  .text h2:before {
+    display: none;
+  }
+  .vantagem {
+    font-size: 48rem;
+  }
+  .links {
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+  @media (max-width: 400px) {
+    .vantagem {
+      font-size: 32rem;
+    }
+  }
 }
