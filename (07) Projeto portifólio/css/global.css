@@ -1,0 +1,33 @@
+:root   {
+  font-size: 6.25%;
+  /* 1 px == 1 rem */
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 16rem;
+  font-family: "Fira sans", Arial, Helvetica, sans-serif;
+  color: #141414;
+  margin-bottom: 1000px;;
+}
+
+ul{
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #141414;
+
+}
+
