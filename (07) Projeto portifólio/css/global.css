@@ -13,7 +13,6 @@ body {
   font-size: 16rem;
   font-family: "Fira sans", Arial, Helvetica, sans-serif;
   color: #141414;
-  margin-bottom: 1000px;;
 }
 
 ul{
@@ -31,3 +30,18 @@ a {
 
 }
 
+.subtitulo {
+  font-size: 128rem;
+  word-break: break-all;
+  line-height: 1;
+  text-transform: uppercase;
+  max-width: 4ch; /*4 caracteres ele quebra*/
+  }
+
+  @media( max-width: 800px) {
+    .subtitulo {
+      font-size: 48rem;
+      text-transform: capitalize;
+      max-width: initial !important;
+    }
+  }
