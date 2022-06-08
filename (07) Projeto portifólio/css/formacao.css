@@ -1,32 +1,31 @@
 .formacao {
-  background: #141414;
-  color: #fff;
+  background: var(--background-Form);
+  color: var(--color-formacao);
 }
 .formacao-container {
-    max-width: 1200px;
-    padding: 120rem 20rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 100rem; 
-    position: relative;
+  max-width: 1200px;
+  padding: 120rem 20rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100rem;
+  position: relative;
 }
 
 .formacao-container::after {
-  content:"";
+  content: "";
   display: block;
   width: 130px;
   height: 100px;
-  background: url('../img/detalhe.svg') no-repeat center;
+  background: url("../img/detalhe.svg") no-repeat center;
   position: absolute;
   bottom: -50px;
   left: 20px;
 }
 
 .formacao .subtitulo {
-  color: #000;
+  color: var(--color-subtituloformacao);
   max-width: 5ch;
-  
 }
 
 .formacao-texto {
@@ -38,7 +37,7 @@
 }
 
 .formacao-texto strong {
-  color: #fff;
+  color: var(--color-formacao);
 }
 
 .faculdade-lista {
@@ -50,7 +49,7 @@
 
 .faculdade {
   flex: 1;
-  background: #000;
+  background: var(--color-subtituloformacao);
   padding: 20px;
   border-radius: 4px;
   display: flex;
@@ -74,7 +73,7 @@
   display: block;
   width: 4px;
   height: 20px;
-  background: linear-gradient(#FF6347,#eca88e);
+  background: linear-gradient(#ff6347, #eca88e);
   position: absolute;
   left: -24px;
 }
@@ -106,16 +105,14 @@
   top: -4px;
 }
 .cursos h3::before {
-  
-  background: url('../img/cursos.svg') no-repeat center center;
+  background: url("../img/cursos.svg") no-repeat center center;
 }
 .idiomas h3::before {
-  
-  background: url('../img/idiomas.svg') no-repeat center center;
+  background: url("../img/idiomas.svg") no-repeat center center;
 }
 .formacao-extra li {
   font-size: 18rem;
-  line-height:1.1;
+  line-height: 1.1;
   margin-bottom: 20px;
 }
 .formacao-extra span {
@@ -128,14 +125,14 @@
     float: right;
   } */
 }
-@media(max-width:800px) {
+@media (max-width: 800px) {
   .formacao-container {
     grid-template-columns: 1fr;
     padding: 60px 20px;
     gap: 40px;
   }
   .formacao .subtitulo {
-    color: #fff;
+    color: var(--color-formacao);
   }
   .formacao-texto {
     font-size: 18rem;
@@ -144,5 +141,4 @@
     left: 0px;
     top: -30px;
   }
- 
 }

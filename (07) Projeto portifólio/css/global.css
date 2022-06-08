@@ -1,6 +1,22 @@
-:root   {
-  font-size: 6.25%;
+:root {
   /* 1 px == 1 rem */
+  font-size: 6.25%;
+
+  /* Backgrounds */
+  --background-Exp: #fff;
+  --background-Form: #141414;
+  --background-Footer: #000000;
+  --background-empresa: #f5f5f5;
+
+  /* Text Colors */
+  --color-body: #141414;
+  --color-exp: #525252;
+
+  --color-formacao: #fff;
+  --color-subtituloformacao: #000;
+
+  --color-footer: #cccc;
+  --color-footer-li: #fff;
 }
 html {
   scroll-behavior: smooth;
@@ -12,10 +28,10 @@ html {
 body {
   font-size: 16rem;
   font-family: "Fira sans", Arial, Helvetica, sans-serif;
-  color: #141414;
+  color: var(--color-body);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -27,8 +43,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #141414;
-
+  color: var(--color-body);
 }
 
 .subtitulo {
@@ -37,12 +52,4 @@ a {
   line-height: 1;
   text-transform: uppercase;
   max-width: 4ch; /*4 caracteres ele quebra*/
-  }
-
-  @media( max-width: 800px) {
-    .subtitulo {
-      font-size: 48rem;
-      text-transform: capitalize;
-      max-width: initial !important;
-    }
-  }
+}

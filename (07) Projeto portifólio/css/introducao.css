@@ -29,7 +29,7 @@
 }
 .introducao p {
   font-size: 24rem;
-  color: #525252;
+  color: var(--color-exp);
 }
 @media (max-width: 1000px) {
   .introducao h1 {
@@ -45,8 +45,8 @@
     font-size: 32rem;
   }
   .introducao h1::before {
-    width:40rem;
-    height:10rem;
+    width: 40rem;
+    height: 10rem;
     top: -10px;
     left: 0;
   }
