@@ -1,24 +1,41 @@
 /* Especificações Gerais */
 :root {
   font-size: 6.25%;
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --fundo-1: #f7f7f7;
+  --fundo-2: #ffffff;
+  --texto: #000000;
+  --subtitulo: rgba(0, 0, 0, 0.2);
+  --background-vantagem: url("./img/onda.svg");
 }
-*{
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fundo-1: #111111;
+    --fundo-2: #000000;
+    --texto: #ffffff;
+    --subtitulo: rgba(255, 255, 255, 0.2);
+    --background-vantagem: url("./img/ondaDark.svg");
+  }
+}
+
+* {
   margin: 0;
   padding: 0;
 }
 
-li{
-
+li {
   list-style: none;
 }
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16rem;
 
-  background: #f7f7f7;
-  
+  background: var(--fundo-1);
+
   display: grid;
-  
+
   justify-items: center;
   gap: 60rem;
   margin-top: 60rem;
@@ -37,80 +54,77 @@ a {
 }
 /* CABEÇALHO */
 header {
-  display:grid;
+  display: grid;
   justify-items: center;
   gap: 60rem;
 }
 
-
 /* Navigation */
 .links {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   gap: 20rem;
 }
 
+.links a {
+  display: inline-block;
 
-.links a{
-  display:inline-block;
-
-  background: #ffffff;
-  color: #000000;
+  background: var(--fundo-2);
+  color: var(--texto);
   text-transform: uppercase;
-  
+
   box-sizing: border-box;
 
   padding: 15rem 30rem;
   border-radius: 4rem;
   border: 2rem solid transparent;
+  transition: 0.3s;
 }
 .links a:hover {
-  border-color: #e21;
+  border-color: var(--cor-primaria);
 }
-.links a:visited{
-  color: #000000;
+.links a:visited {
+  color: var(--texto);
 }
 
 /* Grid */
 .grid {
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
 
   max-width: 1000rem;
 
-  background-color: #F7F7F7;
+  background-color: var(--fundo-1);
 }
 
 /* First element */
-.text{
-  background-color: #fff;
-  
+.text {
+  background-color: var(--fundo-2);
+  color: var(--texto);
   position: relative;
-  display:grid;
-  
+  display: grid;
+
   gap: 20rem;
   padding: 40rem;
-  
+
   text-align: right;
   align-content: center;
   justify-items: end;
 }
-.text h2:before{
+.text h2:before {
   content: "";
 
-  background-color: #ee2211;
-  
-  width:60rem;
-  height: 4rem;
+  background-color: var(--cor-primaria);
 
+  width: 60rem;
+  height: 4rem;
 
   position: absolute;
   top: 30rem;
   right: -30rem;
-  
 }
 .botao {
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
   color: #fff;
   text-transform: uppercase;
 
@@ -118,25 +132,24 @@ header {
   border-radius: 4rem;
 
   display: inline-block;
-
+  transition: 0.3s;
 }
-.botao:hover{
-  background-color: #e21;
+.botao:hover {
+  background-color: var(--cor-primaria-escura);
 }
 /* Segundo Elemento */
-.bicicleta img{
+.bicicleta img {
   height: 100%;
   object-fit: cover;
-
 }
 /* Terceiro elemento */
-.vantagem { 
-  font-size: 64rem;
+.vantagem {
+  background-image: var(--background-vantagem);
+  font-size: 52rem;
   padding: 40rem;
-  
-  background-image: url("./img/onda.svg");
-  color: rgba(0, 0, 0, 0.2);
-  
+
+  color: var(--subtitulo);
+
   text-transform: uppercase;
   text-align: right;
   align-self: center;
@@ -145,33 +158,34 @@ header {
 }
 /* 4 elemento */
 .especify {
-
   padding: 40rem;
-  background-color: #fff;;
+  background-color: var(--fundo-2);
+  color: var(--texto);
   gap: 10rem 20rem;
 }
-.especify li{
-  display:grid;
-  
+.especify li {
+  display: grid;
+
   grid-template-columns: auto 1fr;
   gap: 10rem 20rem;
   padding: 20rem;
-
+  transition: 0.2s;
 }
-.especify li p{
+.especify li p {
   grid-column: 2;
 }
 
-.especify li:nth-child(odd){
-  background-color: #f7f7f7;
+.especify li:nth-child(odd) {
+  background-color: var(--fundo-1);
 }
-.especify li:hover{
-  border-left: 4rem solid #e21;
+.especify li:hover {
+  border-left: 4rem solid var(--cor-primaria);
 }
 
 /* rodape */
 .rodape {
-  background-color: #fff;
+  background: var(--fundo-2);
+  color: var(--texto);
 
   padding: 30rem;
   width: 100%;
@@ -181,18 +195,22 @@ header {
   box-sizing: border-box;
 }
 
-@media (max-width:1000px) {
+@media (max-width: 850px) {
   .grid-break1 {
     grid-template-columns: 1fr;
-
   }
   .vantagem {
     text-align: center;
   }
+  .rodape {
+    margin-top: -60px;
+    background: var(--fundo-2);
+    color: var(--texto);
+  }
 }
 
 @media (max-width: 600px) {
-  body{
+  body {
     gap: 30rem;
     margin-top: 20rem;
   }
@@ -201,13 +219,12 @@ header {
   }
   .grid {
     grid-template-columns: 1fr;
-    
   }
   .text {
     text-align: left;
     justify-items: left;
   }
-  
+
   .text h2:before {
     display: none;
   }
@@ -215,7 +232,7 @@ header {
     font-size: 48rem;
   }
   .links {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto;
   }
   @media (max-width: 400px) {
