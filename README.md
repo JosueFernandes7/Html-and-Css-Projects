@@ -7,7 +7,7 @@ Origamid | [Origamid](https://www.origamid.com/curso/html-e-css-para-iniciantes/
 ProgramadorBr | [ProgBR](https://programadorbr.com/)
 
 
-**Conceitos Absorvidos e Aplciado.**
+**Conceitos Absorvidos e Aplicados.**
 
 Conceitos   | Ferramenta
 :---------: | :------:
