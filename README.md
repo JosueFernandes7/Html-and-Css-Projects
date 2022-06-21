@@ -1,5 +1,9 @@
 
-# Projetos e exercícios realizados no curso de Html e Css da [Origamid](https://www.origamid.com/curso/html-e-css-para-iniciantes/)
+# Projetos e exercícios realizados com as técnologias Html e Css
+*Cursos Estudados*
+[Origamid](https://www.origamid.com/curso/html-e-css-para-iniciantes/)
+[ProgBR](https://programadorbr.com/)
+
 **Conceitos Absorvidos no curso.**
 
 Conceitos   | Ferramenta
