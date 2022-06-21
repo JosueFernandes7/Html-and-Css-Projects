@@ -4,13 +4,16 @@
 [Origamid](https://www.origamid.com/curso/html-e-css-para-iniciantes/)
 [ProgBR](https://programadorbr.com/)
 
+
 **Conceitos Absorvidos no curso.**
 
 Conceitos   | Ferramenta
 :---------: | :------:
 Grid Layout | Css
 Flex Box | Css
-Responsividade | Css
+Display | Css
+Position | Css
+Seletores | Css
+Media Querie | Css
 Formulários | Html
 Semântica | Html
-Display | Css
