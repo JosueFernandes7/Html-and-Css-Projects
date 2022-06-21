@@ -1,7 +1,8 @@
 
 # Projetos e exercícios realizados com as técnologias Html e Css
-*Cursos Estudados*
+*Cursos Estudados:*
 [Origamid](https://www.origamid.com/curso/html-e-css-para-iniciantes/)
+
 [ProgBR](https://programadorbr.com/)
 
 
