@@ -1,12 +1,13 @@
 
-# Projetos e exercícios realizados com as técnologias Html e Css
+# Projetos e exercícios realizados com as técnologias Html e Css, com o objetivo de integrar o conhecimento em teoria e prática.
 *Cursos Estudados:*
-[Origamid](https://www.origamid.com/curso/html-e-css-para-iniciantes/)
+Curso | Link
+:---: |:------:
+Origamid | [Origamid](https://www.origamid.com/curso/html-e-css-para-iniciantes/)
+ProgramadorBr | [ProgBR](https://programadorbr.com/)
 
-[ProgBR](https://programadorbr.com/)
 
-
-**Conceitos Absorvidos no curso.**
+**Conceitos Absorvidos e Aplciado.**
 
 Conceitos   | Ferramenta
 :---------: | :------:
