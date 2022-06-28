@@ -61,14 +61,19 @@ body{
         animation: slideUp 2s forwards;
     }
     #menu a{
-        display: block;
+        display: flex;
+        justify-items: center;
+    }
+    #menu a img {
+        max-width: 50%;
+        margin: 0 auto;
     }
     .menu-info.active {
         animation: slideDown 2s forwards;
         position: absolute;
         display: flex;
         flex-direction: column;
-        top: 77px;
+        top: 76px;
         right: 0;
         background: #000;
     }
