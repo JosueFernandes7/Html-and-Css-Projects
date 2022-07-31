@@ -6,7 +6,8 @@ Curso | Link
 Origamid | [Origamid](https://www.origamid.com/curso/html-e-css-para-iniciantes/)
 ProgramadorBr | [ProgBR](https://programadorbr.com/)
 FrontEndMentor | [FrontEndMentor](https://www.frontendmentor.io/home)
-Udemy | [Dev Web] (https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/)
+Udemy | [Dev Web](https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/)
+Udemy | [Web Projects](https://www.udemy.com/course/50-web-projects-with-html-css-and-javascript/)
 
 **Conceitos Absorvidos e Aplicados.**
 
